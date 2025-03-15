@@ -1,2 +1,2 @@
 # PraticeDart
-Dart언어 연습용
+Dart언어 연습
