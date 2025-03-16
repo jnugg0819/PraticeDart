@@ -13,6 +13,10 @@ void exampleLambda() {
   print(isLongString("hello"));
   print(isLongString("hi"));
 
+  // 람다 없이 클래스 정의시 모든 동작을 직접 정의. 이렇게하면 소문자는?
+  UpperCaseTransformer transformer = UpperCaseTransformer();
+  print(transformer.transform("hello"));
+
   // OCP 원칙을 적용하여 기존 코드를 수정하지 않고 새로운 기능 추가.
   Multiplier doublerMultiplier = Multiplier((num) => num * 2);
   print(doublerMultiplier.multiply(5));
@@ -41,5 +45,11 @@ class StringTransformer {
 
   String applyTransform(String input) {
     return transform(input);
+  }
+}
+
+class UpperCaseTransformer {
+  String transform(String text) {
+    return text.toUpperCase();
   }
 }
