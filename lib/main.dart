@@ -1,5 +1,5 @@
-import 'ArrowFunction/ArrowFunction.dart';
-import 'ArrowFunction/ArrowFunction02.dart';
+import 'ArrowFunction/arrow_functoin.dart';
+import 'ArrowFunction/arrow_function02.dart';
 import 'ForClass.dart';
 
 void main() {
